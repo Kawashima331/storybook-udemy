@@ -1,4 +1,5 @@
 import PropType from "prop-types";
+import { background, color } from "storybook/internal/theming";
 
 export default function Task({
     task: {id, title, state}, 
@@ -29,6 +30,7 @@ export default function Task({
                     readOnly={true}
                     name="title"
                     placeholder="input title"
+                    style={{backgroundColor:"red"}}
                     />
             </label>
 
